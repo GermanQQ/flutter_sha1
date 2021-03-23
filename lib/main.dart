@@ -53,7 +53,7 @@ class _SignInDemoState extends State<SignInDemo> {
             ),
             child: Center(
               child: Text(
-                'Sign In Whith Google',
+                'Sign In With Google',
                 style: TextStyle(fontSize: 18, color: Colors.white),
               ),
             ),
