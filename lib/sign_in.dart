@@ -7,6 +7,10 @@ final FirebaseAuth _auth = FirebaseAuth.instance;
 final GoogleSignIn googleSignIn = GoogleSignIn();
 
 
+//По коду авторизації нічого не скажу, бо робив її по відео з ютуба.
+//Але десь на моменті авторизації воно ломається
+
+
 String name;
 String imageUrl;
 
@@ -49,6 +53,7 @@ Future<String> signInWithGoogle() async{
 
     return '$user';
   }
+
 
   return null;
 

@@ -3,20 +3,25 @@ import 'package:flutter_sha1/FirstScreen.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 
+
+
 GoogleSignIn _googleSignIn = GoogleSignIn(
   scopes: <String>[
     'email',
   ],
 );
 
-void main(){
+
+void main(){ //Головна фунція запуска застосунку
   runApp(
     MaterialApp(
       title: 'DATAWIZ',
-      home: SignInDemo(),
+      home: SignInDemo(), //Головний віджет
     )
   );
 }
+
+//Що стосується коду авторизації, коментарі не додав, бо сам толком не розумів що пишу
 
 class SignInDemo extends StatefulWidget {
   @override
@@ -36,22 +41,22 @@ class _SignInDemoState extends State<SignInDemo> {
   }
 
 
-  Widget roundedButton(){
+  Widget roundedButton(){ //Створив віджет кнопки "Вхід"
     return GestureDetector(
-      onTap: (){
-        _handleSignIn();
+      onTap: (){    //
+        _handleSignIn(); //Додав функцію при натиску кнопки
       },
       child: Material(
-        child: Padding(
+        child: Padding( //Дав віступи для кнопки
           padding: EdgeInsets.symmetric(horizontal: 24),
           child: Container(
-            width: MediaQuery.of(context).size.width,
+            width: MediaQuery.of(context).size.width, //розтянув кнопку по вільній площі
             height: 56,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(10), //Заокруглив края кнопки
               color: Colors.blueAccent
             ),
-            child: Center(
+            child: Center( //Відформатувував текст по центру кнопки
               child: Text(
                 'Sign In With Google',
                 style: TextStyle(fontSize: 18, color: Colors.white),
