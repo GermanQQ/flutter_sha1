@@ -3,7 +3,9 @@ import 'package:flutter_sha1/FirstScreen.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 
-
+//Що стосується коду авторизації, коментарі не додав, бо сам толком не розумів що пишу
+//Авторизація писалась під android
+//Тестити тільки на андроїді
 
 GoogleSignIn _googleSignIn = GoogleSignIn(
   scopes: <String>[
@@ -21,7 +23,7 @@ void main(){ //Головна фунція запуска застосунку
   );
 }
 
-//Що стосується коду авторизації, коментарі не додав, бо сам толком не розумів що пишу
+
 
 class SignInDemo extends StatefulWidget {
   @override
